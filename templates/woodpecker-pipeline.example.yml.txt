@@ -1,0 +1,14 @@
+# INACTIVE EXAMPLE ONLY. Move to an active CI config path ONLY after owner approval.
+# Never configure Woodpecker to read this .txt file during preparation.
+# Woodpecker v2/v3-style steps/image/commands; no execution has been performed.
+# Reference: https://woodpecker-ci.org/docs/usage/workflow-syntax
+# The combined example intentionally ends in failure. Isolate cases for real evidence.
+steps:
+  - name: pass-case
+    image: alpine
+    commands:
+      - sh testcases/pass/check.sh
+  - name: fail-case
+    image: alpine
+    commands:
+      - sh testcases/fail/check.sh

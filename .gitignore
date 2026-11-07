@@ -1,0 +1,4 @@
+# Local editor and scratch files only
+*~
+*.swp
+.DS_Store
