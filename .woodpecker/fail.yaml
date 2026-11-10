@@ -1,0 +1,1 @@
+steps: [{name: fail-case, image: "alpine:3.20", commands: ["sh testcases/fail/check.sh"]}]
