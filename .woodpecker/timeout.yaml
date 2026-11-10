@@ -1,0 +1,1 @@
+steps: [{name: timeout-case, image: "alpine:3.20", commands: ["echo CI157_TIMEOUT_CASE", "timeout 180 sleep 150", "echo SHOULD_NOT_REACH"]}]
