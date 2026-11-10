@@ -1,11 +1,15 @@
 labels:
   platform: windows/amd64
+when:
+  - event: push
 steps:
   - name: ci157-win-pass
-    image: alpine
+    image: powershell.exe
     commands:
       - cmd /c echo CI157_WIN_PASS
-      - powershell -NoProfile -Command "Write-Output CI157_WIN_PASS"
+      - Write-Output CI157_WIN_PASS
+
+
 
 
 
